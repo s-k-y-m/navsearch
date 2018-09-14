@@ -8,10 +8,45 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "webpack": "webpack -d --watch",
+    "server": "nodemon ./server/server.js",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^8.0.0-beta.6",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "react-icons": "^3.0.5",
+    "regenerator-runtime": "^0.12.1",
+    "semantic-ui-icon": "^2.3.3",
+    "semantic-ui-react": "^0.82.3",
+    "velocity-react": "^1.4.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
   }
 }
