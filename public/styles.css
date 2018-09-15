@@ -110,13 +110,19 @@ input {
   letter-spacing: 0.086em;
   text-transform: uppercase;
   cursor: pointer;
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: center;
+  justify-content: flex-end;
 }
 
 .latestMenu:hover,
 .cityBestMenu:hover,
 .currentLocationMenu:hover {
   color: #b70038;
+}
+
+.ui.modal {
+  background: red;
+}
+
+.dropDownItem {
+  width: 500px;
 }

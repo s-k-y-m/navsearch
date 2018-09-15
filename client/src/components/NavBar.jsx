@@ -12,7 +12,6 @@ class NavBar extends React.Component {
   }
 
   handleOpen() {
-    console.log('TRIGGERD');
     this.setState({ modalOpen: true });
   }
 
@@ -88,25 +87,33 @@ class NavBar extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <ModalControlled open={this.state.modalOpen} />
+                  <ModalControlled
+                    open={this.state.modalOpen}
+                    onClose={this.handleClose.bind(this)}
+                  />
                 </Menu.Menu>
               </div>
             </div>
             <div className="navRight">
               <div className="latestMenu">The Latest</div>
               <div className="cityBestMenu">City's Best</div>
-              <div className="currentLocationMenu">San Francisco</div>
-              {/* <Dropdown simple>
-            <Dropdown.Menu>
-              <Dropdown.Item>
-                <span className="text">New</span>
-              </Dropdown.Item>
-              <Dropdown.Item>Open</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Header>Export</Dropdown.Header>
-              <Dropdown.Item>Share</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown> */}
+              <div>
+                <Dropdown
+                  text="San Francisco"
+                  className="currentLocationMenu dropdown"
+                >
+                  <Dropdown.Menu>
+                    <Dropdown.Item className="dropDownItem">
+                      <span className="text">New</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="dropDownItem">Open</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item className="dropDownItem">
+                      Share
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
             </div>
           </Menu>
         </div>
