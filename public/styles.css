@@ -16,7 +16,7 @@
 
 /* General Styling */
 input {
-  width: 500px;
+  width: 480px;
   height: 45px;
 }
 
@@ -62,7 +62,6 @@ input {
 
 .searchSvg {
   flex: 1;
-  margin-left: 50px;
 }
 
 .svgSearchContainer {
@@ -73,6 +72,10 @@ input {
 .prompt {
   flex: 1;
   border-bottom: 1px solid #d0d2d3;
+}
+
+.modalPrompt {
+  width: 300px !important;
 }
 
 .logoContainer:hover {
@@ -124,5 +127,43 @@ input {
 }
 
 .dropDownItem {
-  width: 500px;
+  color: white !important;
+  background-color: #151518 !important;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Calibre-Regular';
+  letter-spacing: 0.013em;
+  text-transform: uppercase !important;
+}
+
+.text {
+  text-transform: uppercase !important;
+}
+
+.ui.fluid.multiple.selection.dropdown.currentLocationMenu.dropdown {
+  border: none !important;
+  width: 50%;
+}
+
+.placeholder {
+  height: 2000px;
+}
+
+.modalContainer {
+  display: flex;
+}
+
+.modalLeftSide {
+  flex: 1;
+}
+
+.modalRightSide {
+  flex: 1;
 }

@@ -3,6 +3,17 @@ import { Dropdown, Icon, Menu, Segment, ModalContent } from 'semantic-ui-react';
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import ModalControlled from './Modal.jsx';
 
+const options = [
+  { key: 'sanFrancisco', text: 'San Francisco', value: 'losAngeles' },
+  { key: 'losAngeles', text: 'Los Angeles', value: 'losAngeles' },
+  { key: 'lasVegas', text: 'Las Vegas', value: 'lasVegas' },
+  { key: 'atlanta', text: 'Atlanta', value: 'atlanta' },
+  { key: 'austin', text: 'Austin', value: 'austin' },
+  { key: 'baltimore', text: 'Baltimore', value: 'baltimore' },
+  { key: 'boston', text: 'Boston', value: 'boston' },
+  { key: 'charleston', text: 'Charleston', value: 'charleston' }
+];
+
 class NavBar extends React.Component {
   constructor() {
     super();
@@ -101,18 +112,10 @@ class NavBar extends React.Component {
                 <Dropdown
                   text="San Francisco"
                   className="currentLocationMenu dropdown"
-                >
-                  <Dropdown.Menu>
-                    <Dropdown.Item className="dropDownItem">
-                      <span className="text">New</span>
-                    </Dropdown.Item>
-                    <Dropdown.Item className="dropDownItem">Open</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Item className="dropDownItem">
-                      Share
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
+                  simple
+                  item
+                  options={options}
+                />
               </div>
             </div>
           </Menu>
