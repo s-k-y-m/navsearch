@@ -29,6 +29,10 @@ input {
 
 .navLeft {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
   flex: 1;
 }
 
@@ -44,20 +48,44 @@ input {
   font-size: 30px;
 }
 
+.searchContainer {
+  border-bottom: 1px solid #d0d2d3;
+}
+
 .searchBar {
   border-right: 1px solid #d0d2d3;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-content: center;
+}
+
+.searchSvg {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.svgSearchContainer {
+  display: block;
+  margin: auto;
 }
 
 .prompt {
   flex: 1;
+  border-bottom: 1px solid #d0d2d3;
+}
+
+.logoContainer:hover {
+  background-color: #b70038;
+  stroke: white;
+  width: 100%;
 }
 
 .logo {
+  display: flex;
   padding: 10px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .zagat-logo-paths {
@@ -87,5 +115,8 @@ input {
   text-align: center;
 }
 
-zagat-logo-svg {
+.latestMenu:hover,
+.cityBestMenu:hover,
+.currentLocationMenu:hover {
+  color: #b70038;
 }
