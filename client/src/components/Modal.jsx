@@ -1,6 +1,20 @@
 import React from 'react';
 import { Modal } from 'semantic-ui-react';
 import Bakery from './icons/Bakery.jsx';
+import Breakfast from './icons/Breakfast.jsx';
+import Brunch from './icons/Brunch.jsx';
+import Chinese from './icons/Chinese.jsx';
+import Dessert from './icons/Dessert.jsx';
+import French from './icons/French.jsx';
+import Italian from './icons/Italian.jsx';
+import Japanese from './icons/Japanese.jsx';
+import Mexican from './icons/Mexican.jsx';
+import Pizza from './icons/Pizza.jsx';
+import Seafood from './icons/Seafood.jsx';
+import TexMex from './icons/TexMex.jsx';
+import Thai from './icons/Thai.jsx';
+import Vegetarian from './icons/Vegetarian.jsx';
+import Vietnamese from './icons/Vietnamese.jsx';
 
 const ModalModalExample = props => (
   <div>
@@ -141,7 +155,31 @@ const ModalModalExample = props => (
             Mexican
           </div>
         </div>
-        <Bakery />
+        <div>
+          <Bakery />
+          <Breakfast />
+          <Brunch />
+        </div>
+        <div>
+          <Chinese />
+          <Dessert />
+          <French />
+        </div>
+        <div>
+          <Italian />
+          <Japanese />
+          <Mexican />
+        </div>
+        <div>
+          <Pizza />
+          <Seafood />
+          <TexMex />
+        </div>
+        <div>
+          <Thai />
+          <Vegetarian />
+          <Vietnamese />
+        </div>
       </Modal.Header>
     </Modal>
   </div>

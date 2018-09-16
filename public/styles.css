@@ -185,15 +185,92 @@ div {
   font-size: unset !important;
 }
 
-.bakeryCircle {
-  border-radius: 50%;
-  border: 1px solid #101820;
-  height: 75px;
-  width: 75px;
+.bakerySVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
 }
 
-.bakerySVG {
-  height: 50px;
-  width: 50px;
+.breakfastSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.brunchSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.chineseSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.dessertSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.frenchSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.italianSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.japaneseSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.mexicanSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.pizzaSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.seafoodSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.texMexSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.thaiSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.vegetarianSVG {
+  height: 60px;
+  width: 60px;
+  padding: 6px;
+}
+
+.vietnameseSVG {
+  height: 60px;
+  width: 60px;
   padding: 6px;
 }
