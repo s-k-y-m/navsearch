@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal } from 'semantic-ui-react';
+import Bakery from './icons/Bakery.jsx';
 
 const ModalModalExample = props => (
   <div>
@@ -140,6 +141,7 @@ const ModalModalExample = props => (
             Mexican
           </div>
         </div>
+        <Bakery />
       </Modal.Header>
     </Modal>
   </div>

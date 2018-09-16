@@ -30,7 +30,6 @@ input {
 .navLeft {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-content: center;
   align-items: center;
   flex: 1;
@@ -81,7 +80,7 @@ input {
 .logoContainer:hover {
   background-color: #b70038;
   stroke: white;
-  width: 100%;
+  fill: white;
 }
 
 .logo {
@@ -166,4 +165,35 @@ input {
 
 .modalRightSide {
   flex: 1;
+}
+
+div {
+  animation: fadein 0.5s;
+}
+
+/* Key Frames */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  font-size: unset !important;
+}
+
+.bakeryCircle {
+  border-radius: 50%;
+  border: 1px solid #101820;
+  height: 75px;
+  width: 75px;
+}
+
+.bakerySVG {
+  height: 50px;
+  width: 50px;
+  padding: 6px;
 }
