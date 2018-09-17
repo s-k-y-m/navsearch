@@ -108,15 +108,7 @@ class NavBar extends React.Component {
             <div className="navRight">
               <div className="latestMenu">The Latest</div>
               <div className="cityBestMenu">City's Best</div>
-              <div>
-                <Dropdown
-                  text="San Francisco"
-                  className="currentLocationMenu dropdown"
-                  simple
-                  item
-                  options={options}
-                />
-              </div>
+              <div className="currentLocationMenu">San Francisco</div>
             </div>
           </Menu>
         </div>

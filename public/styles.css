@@ -14,6 +14,16 @@
   src: url('./fonts/CalibreWeb-Semibold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'DomaineText-Italic';
+  src: url('./fonts/DomaineTextWeb-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DomaineText-LightItalic';
+  src: url('./fonts/DomaineTextWeb-LightItalic.woff') format('woff');
+}
+
 /* General Styling */
 input {
   width: 480px;
@@ -274,4 +284,67 @@ div {
   height: 60px;
   width: 60px;
   padding: 6px;
+}
+
+/* Dropdown */
+.dropDownContainer {
+  display: flex;
+  align-items: center;
+}
+
+.dropDownLeftContainer {
+  width: 720px;
+  height: 500px;
+  background: red;
+  flex-shrink: 0;
+}
+
+.dropDownDetails {
+  flex: 1;
+}
+
+.dropDownItem {
+  color: #9b9b9b;
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d0d2d3;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.dropDownCity {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 22px;
+  line-height: 28px;
+  font-family: 'DomaineText-Italic' !important;
+  color: white !important;
+  letter-spacing: normal !important;
+}
+
+.dropDownState {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Calibre-Medium';
+  color: #9b9b9b !important;
+  letter-spacing: 0.061em !important;
 }
