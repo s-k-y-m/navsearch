@@ -51,6 +51,10 @@ input {
   border-bottom: 1px solid #d0d2d3;
 }
 
+.searchContainerModal {
+  border-right: 1px solid #d0d2d3;
+}
+
 .searchBar {
   border-right: 1px solid #d0d2d3;
   display: flex;
@@ -121,10 +125,6 @@ input {
   color: #b70038;
 }
 
-.ui.modal {
-  background: red;
-}
-
 .dropDownItem {
   color: white !important;
   background-color: #151518 !important;
@@ -167,6 +167,7 @@ input {
   flex: 1;
 }
 
+/* Animation */
 div {
   animation: fadein 0.5s;
 }
