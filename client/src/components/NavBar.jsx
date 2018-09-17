@@ -2,6 +2,7 @@ import React from 'react';
 import { Dropdown, Icon, Menu, Segment, ModalContent } from 'semantic-ui-react';
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import ModalControlled from './Modal.jsx';
+import { VelocityComponent } from 'velocity-react';
 
 const options = [
   { key: 'sanFrancisco', text: 'San Francisco', value: 'losAngeles' },
@@ -15,8 +16,8 @@ const options = [
 ];
 
 class NavBar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       modalOpen: false
     };
@@ -108,14 +109,21 @@ class NavBar extends React.Component {
             <div className="navRight">
               <div className="latestMenu">The Latest</div>
               <div className="cityBestMenu">City's Best</div>
-              <div>
-                <Dropdown
-                  text="San Francisco"
-                  className="currentLocationMenu dropdown"
-                  simple
-                  item
-                  options={options}
-                />
+              <div
+                className="currentLocationMenu"
+                onClick={this.props.onDropDownClicked}
+              >
+                San Francisco
+                <span className="chevron">
+                  <VelocityComponent
+                    animation={{
+                      rotateZ: this.props.displayDropDown ? -180 : 0
+                    }}
+                    duration={250}
+                  >
+                    <FaChevronDown />
+                  </VelocityComponent>
+                </span>
               </div>
             </div>
           </Menu>
