@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Bakery = () => {
   return (
@@ -7,7 +8,7 @@ const Bakery = () => {
       height="96"
       viewBox="0 0 96 96"
       stroke="black"
-      className="bakerySVG"
+      className={styles.bakerySVG}
     >
       <title>Bakery</title>
       <g fill="none" fill-rule="evenodd">

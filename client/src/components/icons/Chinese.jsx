@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Chinese = () => {
   return (
@@ -7,7 +8,7 @@ const Chinese = () => {
       height="96"
       viewBox="0 0 96 96"
       stroke="black"
-      className="chineseSVG"
+      className={styles.chineseSVG}
     >
       <title>Chinese</title>
       <g fill="none" fill-rule="evenodd">

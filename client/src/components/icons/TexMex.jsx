@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const TexMex = () => {
   return (
@@ -6,7 +7,7 @@ const TexMex = () => {
       width="96"
       height="96"
       viewBox="0 0 96 96"
-      className="texMexSVG"
+      className={styles.texMexSVG}
       stroke="black"
     >
       <title>Tex-Mex</title>

@@ -1,13 +1,15 @@
 import React from 'react';
-import '../styles/dropdown.css';
+import styles from '../styles/dropdown.css';
 
 const DropDownDetails = props => {
   const { location, nearest } = props;
   return (
-    <div className="dropDownItem">
-      <h1 className="dropDownCity">{location.city}</h1>
-      <h5 className="dropDownState">{location.state}</h5>
-      {nearest === location.city ? <div class="nearest">Nearest</div> : null}
+    <div className={styles.dropDownItem}>
+      <h1 className={styles.dropDownCity}>{location.city}</h1>
+      <h5 className={styles.dropDownState}>{location.state}</h5>
+      {nearest === location.city ? (
+        <div class={styles.nearest}>Nearest</div>
+      ) : null}
     </div>
   );
 };

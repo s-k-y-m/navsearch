@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Brunch = () => {
   return (
@@ -7,7 +8,7 @@ const Brunch = () => {
       height="96"
       viewBox="0 0 96 96"
       stroke="black"
-      className="brunchSVG"
+      className={styles.brunchSVG}
     >
       <title>Brunch</title>
       <g fill="none" fill-rule="evenodd">

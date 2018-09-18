@@ -3,7 +3,7 @@ import { Dropdown, Icon, Menu, Segment, ModalContent } from 'semantic-ui-react';
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import ModalControlled from './Modal.jsx';
 import { VelocityComponent } from 'velocity-react';
-import '../styles/navbar.css';
+import styles from '../styles/navbar.css';
 
 const options = [
   { key: 'sanFrancisco', text: 'San Francisco', value: 'losAngeles' },
@@ -35,20 +35,20 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <div className="navbar">
+        <div className={styles.navbar}>
           <Menu attached="top">
-            <div className="navLeft">
-              <div className="logoContainer">
-                <div className="logo">
+            <div className={styles.navLeft}>
+              <div className={styles.logoContainer}>
+                <div className={styles.logo}>
                   <svg
-                    className="zagat-logo-svg"
+                    className={styles.zagatLogoSvg}
                     width="145"
                     height="33"
                     viewBox="0 0 145 33"
                   >
                     <title />
                     <g fill="none">
-                      <g className="zagat-logo-paths">
+                      <g className={styles.zagatLogoPaths}>
                         <path d="M36.7 27.4L34.4 32.1 36.7 32.1 38.1 29.3 49.4 29.3 50.7 32.1 53.1 32.1 50.8 27.4 36.7 27.4" />
                         <path d="M43.6 0.1L27.5 32.1 29.9 32.1 43.8 4 57.7 32.1 60.2 32.1 44 0.1 43.6 0.1" />
                         <path d="M1.9 7.5L1.9 9.5 11.9 9.5 0.1 31.7 0.1 32.1 24.8 32.1 24.8 30.2 3.2 30.2 15.3 7.5 1.9 7.5" />
@@ -67,18 +67,18 @@ class NavBar extends React.Component {
                   </svg>
                 </div>
               </div>
-              <div className="searchBar">
+              <div className={styles.searchBar}>
                 <Menu.Menu position="left">
                   <div className="ui right aligned category search item">
-                    <div className="searchContainer">
+                    <div className={styles.searchContainer}>
                       <div className="ui transparent icon input">
-                        <div className="svgSearchContainer">
+                        <div className={styles.svgSearchContainer}>
                           <svg
                             width="24"
                             height="24"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="searchSvg"
+                            className={styles.searchSvg}
                           >
                             <title>search</title>
                             <g
@@ -92,7 +92,7 @@ class NavBar extends React.Component {
                           </svg>
                         </div>
                         <input
-                          className="prompt"
+                          className={styles.prompt}
                           type="text"
                           placeholder="Find a great place near you"
                           onFocus={this.handleOpen.bind(this)}
@@ -107,15 +107,15 @@ class NavBar extends React.Component {
                 </Menu.Menu>
               </div>
             </div>
-            <div className="navRight">
-              <div className="latestMenu">The Latest</div>
-              <div className="cityBestMenu">City's Best</div>
+            <div className={styles.navRight}>
+              <div className={styles.latestMenu}>The Latest</div>
+              <div className={styles.cityBestMenu}>City's Best</div>
               <div
-                className="currentLocationMenu"
+                className={styles.currentLocationMenu}
                 onClick={this.props.onDropDownClicked}
               >
                 San Francisco
-                <span className="chevron">
+                <span className={styles.chevron}>
                   <VelocityComponent
                     animation={{
                       rotateZ: this.props.displayDropDown ? -180 : 0

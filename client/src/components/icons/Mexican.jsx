@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Mexican = () => {
   return (
@@ -6,7 +7,7 @@ const Mexican = () => {
       width="96px"
       height="96px"
       viewBox="0 0 96 96"
-      className="mexicanSVG"
+      className={styles.mexicanSVG}
       stroke="black"
     >
       <title>Mexican</title>

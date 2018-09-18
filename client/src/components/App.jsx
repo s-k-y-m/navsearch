@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar.jsx';
 import DropDownDetails from './DropdownDetails.jsx';
-import '../styles/app.css';
-import '../styles/dropdown.css';
+import styles from '../styles/app.css';
+// import styles from '../styles/dropdown.css';
 
 var fakeLocations = [
   {
@@ -45,10 +45,10 @@ class App extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="dropDownContainer">
-          <div className="dropDownLeftContainer" />
-          <div className="dropDownDetails">
-            <div className="selectCity">- Select A City -</div>
+        <div className={styles.dropDownContainer}>
+          <div className={styles.dropDownLeftContainer} />
+          <div className={styles.dropDownDetails}>
+            <div className={styles.selectCity}>- Select A City -</div>
             {fakeLocations.map(location => {
               count++;
               return (
@@ -56,14 +56,14 @@ class App extends React.Component {
                   location={location}
                   nearest={this.state.nearest}
                   id={count}
-                  className="dropDownDetailsItem"
+                  className={styles.dropDownDetailsItem}
                 />
               );
             })}
           </div>
         </div>
         <div>
-          <h1 className="placeholder" />
+          <h1 className={styles.placeholder} />
         </div>
       </React.Fragment>
     );

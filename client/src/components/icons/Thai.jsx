@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Thai = () => {
   return (
@@ -6,7 +7,7 @@ const Thai = () => {
       width="96"
       height="96"
       viewBox="0 0 96 96"
-      className="thaiSVG"
+      className={styles.thaiSVG}
       stroke="black"
     >
       <title>Thai</title>

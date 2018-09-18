@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/modal.css';
 
 const Seafood = () => {
   return (
@@ -6,7 +7,7 @@ const Seafood = () => {
       width="96"
       height="96"
       viewBox="0 0 96 96"
-      className="seafoodSVG"
+      className={styles.seafoodSVG}
       stroke="black"
     >
       <title>Seafood</title>

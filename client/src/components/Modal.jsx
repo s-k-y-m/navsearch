@@ -15,24 +15,24 @@ import TexMex from './icons/TexMex.jsx';
 import Thai from './icons/Thai.jsx';
 import Vegetarian from './icons/Vegetarian.jsx';
 import Vietnamese from './icons/Vietnamese.jsx';
-import '../styles/modal.css';
+import styles from '../styles/modal.css';
 
 const ModalModalExample = props => (
   <div>
-    <Modal open={props.open} onClose={props.onClose} className="modal">
+    <Modal open={props.open} onClose={props.onClose} className={styles.modal}>
       <Modal.Header>
-        <div className="modalContainer">
-          <div className="modalLeftSide">
+        <div className={styles.modalContainer}>
+          <div className={styles.modalLeftSide}>
             <div className="ui right aligned category search item">
-              <div className="searchContainer">
+              <div className={styles.searchContainer}>
                 <div className="ui transparent icon input">
-                  <div className="svgSearchContainer">
+                  <div className={styles.svgSearchContainer}>
                     <svg
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="searchSvg"
+                      className={styles.searchSvg}
                     >
                       <title>search</title>
                       <g
@@ -46,7 +46,7 @@ const ModalModalExample = props => (
                     </svg>
                   </div>
                   <input
-                    className="prompt modalPrompt"
+                    className={`${styles.prompt} ${styles.modalPrompt}`}
                     type="text"
                     placeholder="Find a great place near you"
                   />
@@ -54,10 +54,10 @@ const ModalModalExample = props => (
               </div>
             </div>
           </div>
-          <div className="modalRightSide">
-            <div className="searchContainer">
+          <div className={styles.modalRightSide}>
+            <div className={styles.searchContainer}>
               <div className="ui transparent icon input">
-                <div className="svgSearchContainer">
+                <div className={styles.svgSearchContainer}>
                   <svg viewBox="0 0 24 24" version="1.1" width="24" height="24">
                     <title>location</title>
                     <g
@@ -85,7 +85,7 @@ const ModalModalExample = props => (
                   </svg>
                 </div>
                 <input
-                  className="prompt modalPrompt"
+                  className={`${styles.prompt} ${styles.modalPrompt}`}
                   type="text"
                   placeholder="near San Francisco"
                 />
