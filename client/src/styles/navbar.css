@@ -108,22 +108,22 @@
 .latestMenu,
 .cityBestMenu,
 .currentLocationMenu {
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 15px;
-  line-height: 20px;
-  font-family: 'Calibre-Medium';
-  padding-right: 23px;
-  padding-left: 23px;
-  letter-spacing: 0.086em;
-  text-transform: uppercase;
-  cursor: pointer;
-  justify-content: flex-end;
+  font-style: normal !important;
+  font-variant-ligatures: normal !important;
+  font-variant-caps: normal !important;
+  font-variant-numeric: normal !important;
+  font-variant-east-asian: normal !important;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  font-family: 'Calibre-Medium' !important;
+  padding-right: 23px !important;
+  padding-left: 23px !important;
+  letter-spacing: 0.086em !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  justify-content: flex-end !important;
 }
 
 .latestMenu:hover,
