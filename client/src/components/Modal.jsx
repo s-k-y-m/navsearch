@@ -15,6 +15,7 @@ import TexMex from './icons/TexMex.jsx';
 import Thai from './icons/Thai.jsx';
 import Vegetarian from './icons/Vegetarian.jsx';
 import Vietnamese from './icons/Vietnamese.jsx';
+import '../styles/modal.css';
 
 const ModalModalExample = props => (
   <div>

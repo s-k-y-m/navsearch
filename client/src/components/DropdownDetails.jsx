@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/dropdown.css';
 
 const DropDownDetails = props => {
   const { location, nearest } = props;

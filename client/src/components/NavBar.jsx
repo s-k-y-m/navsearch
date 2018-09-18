@@ -3,6 +3,7 @@ import { Dropdown, Icon, Menu, Segment, ModalContent } from 'semantic-ui-react';
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
 import ModalControlled from './Modal.jsx';
 import { VelocityComponent } from 'velocity-react';
+import '../styles/navbar.css';
 
 const options = [
   { key: 'sanFrancisco', text: 'San Francisco', value: 'losAngeles' },

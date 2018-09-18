@@ -1,6 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar.jsx';
 import DropDownDetails from './DropdownDetails.jsx';
+import '../styles/app.css';
+import '../styles/dropdown.css';
 
 var fakeLocations = [
   {
@@ -71,7 +73,6 @@ class App extends React.Component {
     this.setState({
       displayDropDown: !this.state.displayDropDown
     });
-    console.log('Dropdown Clicked');
   }
 
   render() {

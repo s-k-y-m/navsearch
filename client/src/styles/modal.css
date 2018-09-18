@@ -1,0 +1,63 @@
+.searchContainer {
+  border-bottom: 1px solid #d0d2d3;
+}
+
+.svgSearchContainer {
+  display: block;
+  margin: auto;
+}
+
+.searchSvg {
+  flex: 1;
+}
+
+.prompt {
+  flex: 1;
+  border-bottom: 1px solid #d0d2d3;
+}
+
+.modalContainer {
+  display: flex;
+}
+
+.modalPrompt {
+  width: 300px !important;
+}
+
+.modalLeftSide {
+  flex: 1;
+}
+
+.modalRightSide {
+  flex: 1;
+}
+
+.searchContainerModal {
+  border-right: 1px solid #d0d2d3;
+}
+
+.text {
+  text-transform: uppercase !important;
+}
+
+.modalContainer {
+  display: flex;
+}
+
+.modalLeftSide {
+  flex: 1;
+}
+
+.modalRightSide {
+  flex: 1;
+}
+
+.svgSearchContainer {
+  display: block;
+  margin: auto;
+}
+
+input {
+  width: 480px;
+  height: 45px;
+}
