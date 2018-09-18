@@ -23,9 +23,9 @@
   src: url('./fonts/DomaineTextWeb-LightItalic.woff') format('woff');
 }
 
-.placeholder {
+/* .placeholder {
   height: 2000px;
-}
+} */
 
 /* Dropdown */
 .dropDownContainer {
