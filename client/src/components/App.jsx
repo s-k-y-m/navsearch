@@ -1,33 +1,33 @@
-import React from 'react';
-import NavBar from './NavBar.jsx';
-import DropDownDetails from './DropdownDetails.jsx';
-import styles from '../styles/app.css';
+import React from "react";
+import NavBar from "./NavBar.jsx";
+import DropDownDetails from "./DropdownDetails.jsx";
+import styles from "../styles/app.css";
 // import styles from '../styles/dropdown.css';
 
 var fakeLocations = [
   {
-    city: 'San Francisco',
-    state: 'California'
+    city: "San Francisco",
+    state: "California"
   },
   {
-    city: 'Los Angeles',
-    state: 'California'
+    city: "Los Angeles",
+    state: "California"
   },
   {
-    city: 'Las Vegas',
-    state: 'Nevada'
+    city: "Las Vegas",
+    state: "Nevada"
   },
   {
-    city: 'Atlanta',
-    state: 'Georgia'
+    city: "Atlanta",
+    state: "Georgia"
   },
   {
-    city: 'Austin',
-    state: 'Texas'
+    city: "Austin",
+    state: "Texas"
   },
   {
-    city: 'Baltimore',
-    state: 'Maryland'
+    city: "Baltimore",
+    state: "Maryland"
   }
 ];
 
@@ -35,7 +35,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      nearest: 'San Francisco',
+      nearest: "San Francisco",
       displayDropDown: false
     };
   }
@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <div className={styles.dropDownContainer}>
-          <div className={styles.dropDownLeftContainer} />
+          {/* <div className={styles.dropDownLeftContainer} /> */}
           <div className={styles.dropDownDetails}>
             <div className={styles.selectCity}>- Select A City -</div>
             {fakeLocations.map(location => {
